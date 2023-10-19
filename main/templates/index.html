@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<style>
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+/* Style form fields */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+h1{
+    margin-left:30%;
+    margin-top:5%
+}
+</style>
+<body>
+    <h1>django-Form-practice</h1>
+    <form method="post">{%csrf_token%}
+
+        {{ form }}
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
